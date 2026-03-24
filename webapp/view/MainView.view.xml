@@ -1,0 +1,9 @@
+<mvc:View xmlns:controls="sap.fe.macros.controls" controllerName="gabrieldev.invoices.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+    <Text text="hello world"></Text>
+    </content>
+    </Page>
+</mvc:View>
