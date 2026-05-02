@@ -23,6 +23,10 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
+        backend:  
+          - path: /V2
+            url: https://services.odata.org
+            destination: Northwind     
         flp:
           theme: sap_horizon
           path: test/flpSandbox.html

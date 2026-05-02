@@ -14,7 +14,22 @@
       "id": "@sap/generator-fiori:basic",
       "version": "1.21.0",
       "toolsId": "eeb89690-f2f7-4962-925f-6e10767e3ddf"
-    }
+    },
+
+    "dataSources": {
+      "mainService": {
+        "_comment": "ORIGINAL: uri era '/V3/Northwind/Northwind.svc/' - Reemplazado para usar BTP Destination 'Northwind' via proxy /northwind",
+        "uri": "/V2/Northwind/Northwind.svc/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/mainService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      }
+    }    
+    
+    
   },
   "sap.ui": {
     "technology": "UI5",
@@ -51,7 +66,14 @@
         "settings": {
           "bundleName": "gabrieldev.invoices.i18n.i18n"
         }
+      },
+      
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {}
       }
+
     },
     "resources": {
       "css": [
